@@ -1,0 +1,1 @@
+cmd_Release/obj.target/addon.node := g++ -shared -pthread -rdynamic -m64  -Wl,-soname=addon.node -o Release/obj.target/addon.node -Wl,--start-group Release/obj.target/addon/opencv.o Release/obj.target/addon/base64.o -Wl,--end-group -L/user/local/lib -lopencv_core -lopencv_imgproc -lopencv_highgui
